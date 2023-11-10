@@ -1,0 +1,17 @@
+streamlit
+openai
+sentence-transformers
+BeautifulSoup4
+pinecone-client
+python-dotenv
+tiktoken
+langchain
+nltk
+numpy
+requests
+streamlit_chat
+matplotlib
+plotly
+pypdf
+llama_index
+Flask

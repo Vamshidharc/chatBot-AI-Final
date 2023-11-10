@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Chatbot</title>
+    <img src="{{ url_for('static', filename='images/Homepage.png') }}" alt="image" class="homePage"/>
+
+</head>
+<body>
+<!--<div class="homePage">-->
+<!--    <img src="{{ url_for('static', filename='images/Homepage.png') }}" alt="image" class="homePage"/>-->
+<!--    </div>-->
+<div class="container">
+    <div class="chatterbox">
+        <div class="chatterbox__support">
+            <div class="chatterbox__header">
+                <div class="chatterbox__image--header">
+                    <img class = "image1" src="{{ url_for('static', filename='images/Capture_3.PNG') }}" alt="image" />
+                </div>
+                <div class="chatterbox__content--header">
+                    <h4 class="chatterbox__heading--header">AI chatbot</h4>
+                    <p class="chatterbox__description--header">Hi. Am Co-op Legal Services GPT Chat Assistant !!</p>
+                </div>
+            </div>
+            <div class="chatterbox__messages">
+                <div></div>
+            </div>
+            <div class="chatterbox__footer">
+                <input type="text" placeholder="Type your query...">
+                <button class="chatterbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatterbox__button" >
+            <button><img src="{{ url_for('static', filename='images/chatbot-50.png') }}" /></button>
+        </div>
+    </div>
+</div>
+</div>
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
